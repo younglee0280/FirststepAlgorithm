@@ -1,1 +1,1 @@
-# FirststepCoding
+# FirststepAlgorithm
