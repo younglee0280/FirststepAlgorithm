@@ -14,9 +14,9 @@ public class Multiplication_2739 {
 		for (m = x; m <= x; m++) {
 //			System.out.printf("%d´Ü", x);
 			for (n = 1; n <= 9; n++) {
-			System.out.println(m + " x " + n + " = " + (m * n));
-		}
+				System.out.println(m + " x " + n + " = " + (m * n));
+			}
 //		System.out.printf("\n");
-	}
+		}
 	}
 }
