@@ -12,7 +12,7 @@ public class SelectionSort {
 		int a[] = { 90, 34, 78, 12, 56 };
 		int ins, cmp, min, temp;
 
-		// 정렬 전 배열 내용을 표시
+		// 정렬 전 배열 내용 표시
 		System.out.printf("정렬 전 배열\n");
 		printArray(a);
 		System.out.println("\n");
@@ -28,9 +28,8 @@ public class SelectionSort {
 				a[min] = temp;
 			}
 		}
-	}
-	// 정렬 후 배열 내용 표시
-	//System.out.printf("정렬 후 배열\n");
-	//printArray(a);
-//}//
+		// 정렬 후 배열 내용 표시
+		System.out.printf("정렬 후 배열\n");
+		printArray(a);
+}
 }
