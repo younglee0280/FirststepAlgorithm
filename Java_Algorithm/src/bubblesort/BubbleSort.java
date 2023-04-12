@@ -15,7 +15,6 @@ public class BubbleSort {
 		int ins, cmp, temp;
 
 		// 정렬 전 배열 내용을 표시
-		
 
 		// 버블 정렬로 오름차순 정렬
 		for (ins = 0; ins < 5 - 1; ins++) {
