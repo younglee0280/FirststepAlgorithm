@@ -27,7 +27,7 @@ public class InsertionSort {
 					a[cmp + 1] = a[cmp]; // 조건 만족시 a[cmp] 값 하나 뒤로 이동, 삽입 위치 비움
 				} else {
 					System.out.printf("break로 중단\n");
-					break; // 불만족시 종료
+					break; // 불만족 시 종료
 				}
 				
 				//내부 반복문 1회 실행 후 정렬 중간 결과 내용 표시

@@ -15,6 +15,9 @@ public class BubbleSort {
 		int ins, cmp, temp;
 
 		// 정렬 전 배열 내용을 표시
+		System.out.printf("정렬 전 배열 내용 출력\n");
+		printArray(a);
+		System.out.printf("\n"); // 줄 사이 간격
 
 		// 버블 정렬로 오름차순 정렬
 		for (ins = 0; ins < 5 - 1; ins++) {
@@ -27,6 +30,9 @@ public class BubbleSort {
 			}
 		}
 		// 정렬 후 배열 내용을 표시
+		System.out.printf("정렬 후 배열 내용 출력\n");
+		printArray(a);
+		System.out.printf("\n");
 	}
 
 }
