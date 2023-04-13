@@ -1,4 +1,4 @@
-package sumofarraytrace;
+package sumofarray;
 
 public class SumOfArrayTrace_01 {
 
