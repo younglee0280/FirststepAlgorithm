@@ -12,7 +12,7 @@ public class Multiplication_2739 {
 		x = scn.nextInt();
 
 		for (m = x; m <= x; m++) {
-			System.out.printf("%d´Ü \n", x);
+//			System.out.printf("%d´Ü \n", x);
 			for (n = 1; n <= 9; n++) {
 				System.out.println(m + " x " + n + " = " + (m * n));
 			}
