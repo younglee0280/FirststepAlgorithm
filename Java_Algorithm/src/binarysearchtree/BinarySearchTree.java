@@ -42,8 +42,8 @@ public class BinarySearchTree {
 					}
 					
 				}
-			}while (addFlag == false);
-			
+			} while (addFlag == false);
+
 		}
 	}
 }
