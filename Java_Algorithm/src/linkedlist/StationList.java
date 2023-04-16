@@ -1,6 +1,6 @@
 package linkedlist;
 
-public class StationList_ {
+public class StationList {
 
 	public static String name;
 	public static int next;
