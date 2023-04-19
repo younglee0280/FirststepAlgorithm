@@ -21,8 +21,8 @@ public class MultiplicationSum_11022_BAEK {
 		}
 		
 		for(int i=0; i< n; i++) {
-			//System.out.print("Case #");
-			//System.out.print((i+1)+": ");
+			System.out.print("Case #");
+			System.out.print((i+1)+": ");
 			System.out.println(a[i]+" + "+b[i]+" = "+array[i]);
 		}
 
