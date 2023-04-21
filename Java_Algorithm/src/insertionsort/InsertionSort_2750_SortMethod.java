@@ -3,22 +3,22 @@ package insertionsort;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class InsertionSort_2750 {
+public class InsertionSort_2750_SortMethod {
 	public static void main(String[] args) {
 		
 		Scanner scn = new Scanner(System.in);
 		
 		int N = scn.nextInt();
-		int[] arr = new int[N];
+		int[] a = new int[N];
 		
 		for(int i = 0; i < N; i++) {
-			arr[i] = scn.nextInt();
+			a[i] = scn.nextInt();
 		}
 		
-		Arrays.sort(arr);
+		Arrays.sort(a);
 		
 		
-		for(int val : arr) {
+		for(int val : a) {
 			System.out.println(val);
 		}
 		
