@@ -6,7 +6,6 @@ public class MultiplicationStar_2439 {
 
 	public static void main(String[] args) {
 
-		System.out.println("x = ");
 		Scanner scn = new Scanner(System.in);
 		int num = scn.nextInt();
 		scn.close();
