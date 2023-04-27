@@ -52,16 +52,33 @@ public class BinarySearchTree {
 		int i;
 
 		for (i = 0; i < newIdx; i++) {
-			System.out.printf("tree[%d] : data = %d, left = %d, right = %d\n", i, tree[i].data, tree[i].left,
+			System.out.printf("tree[%d] : data = %d, left = %d, right = %d\n", 
+					i, 
+					tree[i].data, 
+					tree[i].left,
 					tree[i].right);
 		}
 	}
+	
+	 public static void printLogicalBST(int currentIdx) {
+		 if(currentIdx != -1) {
+			 System.out.printf("tree[%d] : data = %d, left = %d, right = %d\n",
+					 currentIdx, 
+					 tree[currentIdx].data, 
+					 tree[currentIdx].left, 
+					 tree[currentIdx].right);
+			 
+			 printLogicalBST(tree[currentIdx].left);
+			 printLogicalBST(tree[currentIdx].right);
+		 }
+	 }
 
 	public static void main(String[] args) {
 		for (int i = 0; i < tree.length; i++) {
 			tree[i] = new BST();
 		}
-
+		
+		// 트리 구성
 		addBST(4);
 		addBST(6);
 		addBST(5);
@@ -71,6 +88,9 @@ public class BinarySearchTree {
 		addBST(1);
 
 		printPhysicalBST();
+		
+		System.out.printf("========================\n");
+		printLogicalBST(rootIdx);
 
 	}
 }
