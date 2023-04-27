@@ -89,7 +89,7 @@ public class BinarySearchTree {
 
 		printPhysicalBST();
 		
-		System.out.printf("========================\n");
+		System.out.printf("==========================================\n");
 		printLogicalBST(rootIdx);
 
 	}
