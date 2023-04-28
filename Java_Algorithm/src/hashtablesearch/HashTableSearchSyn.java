@@ -15,6 +15,7 @@ public class HashTableSearchSyn {
 		int pos;
 
 		Scanner scn = new Scanner(System.in);
+		
 		do {
 			System.out.printf("\n저장할 데이터 = ");
 			data = scn.nextInt();
