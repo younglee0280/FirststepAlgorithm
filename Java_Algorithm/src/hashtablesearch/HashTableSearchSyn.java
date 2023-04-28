@@ -42,20 +42,19 @@ public class HashTableSearchSyn {
 				System.out.printf("해시 테이블이 가득 찼습니다\n");
 			}
 		} while (true);
-		
+
 		do {
 			System.out.printf("\n검색할 데이터 = ");
 			data = scn.nextInt();
-			
-			if(data < 0) {
+
+			if (data < 0) {
 				break;
 			}
 			hashValue = hashFunc(data);
-			
+
 			pos = hashValue;
-			
-			
-		}while(true);
+
+		} while (true);
 		scn.close();
 	}
 
