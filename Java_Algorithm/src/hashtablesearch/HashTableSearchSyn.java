@@ -41,7 +41,7 @@ public class HashTableSearchSyn {
 			} else {
 				System.out.printf("해시 테이블이 가득 찼습니다\n");
 			}
-		} while (true);
+		} while(true);
 
 		do {
 			System.out.printf("\n검색할 데이터 = ");
