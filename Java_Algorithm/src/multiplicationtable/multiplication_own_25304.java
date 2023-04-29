@@ -16,11 +16,12 @@ public class multiplication_own_25304 {
 			Integer count = scn.nextInt();
 			
 			sum += (price * count);
-		} if (sum == total) {
+		} 
+			if (sum == total) {
 			System.out.println("Y");
-		} else {
+			} else {
 			System.out.println("N");
+			}
 		}
-	}
 
 }
