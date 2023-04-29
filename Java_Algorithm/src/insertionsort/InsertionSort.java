@@ -17,14 +17,14 @@ public class InsertionSort {
 		printArray(a);
 		System.out.printf("\n");
 
-		for (ins = 1; ins < 5; ins++) { // 외부 루프 카운터
+		for (ins = 1; ins < 5; ins++) {
 			System.out.printf("외부 반복문: temp <- a[%d] = %d\n", ins, a[ins]);
 			temp = a[ins];
 			for (cmp = ins - 1; cmp >= 0; cmp--) { // 내부 루프 카운터
 				System.out.printf("내부 반복문: ins = %d, cmp = %d, temp = %d\n", 
 						ins, cmp, temp);
-				if (a[cmp] > temp) { // 내림차순은 a[cmp] > temp
-					a[cmp + 1] = a[cmp]; // 조건 만족시 a[cmp] 값 하나 뒤로 이동, 삽입 위치 비움
+				if (a[cmp] > temp) { // 내림차순
+					a[cmp + 1] = a[cmp]; // 만족시 a[cmp] 값 하나 뒤로 이동, 삽입 위치 비움
 				} else {
 					System.out.printf("break로 중단\n");
 					break; // 불만족 시 종료

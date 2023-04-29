@@ -18,9 +18,9 @@ public class multiplication_own_25304 {
 			sum += (price * count);
 		} 
 			if (sum == total) {
-			System.out.println("Y");
+			System.out.println("Yes");
 			} else {
-			System.out.println("N");
+			System.out.println("No");
 			}
 		}
 
