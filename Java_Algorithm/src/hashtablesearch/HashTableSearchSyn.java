@@ -32,7 +32,6 @@ public class HashTableSearchSyn {
 				if (pos <= hashTable.length) {
 					pos = 0;
 				}
-
 				if (pos == hashValue) {
 					break;
 				}
