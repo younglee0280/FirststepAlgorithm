@@ -20,6 +20,7 @@ public class SelectionSort_2751 {
 		}
 		
 		//검색, 정렬, 셔플 등의 기능 제공
+		//Collections.sort() 메서드를 이용한 요소 정렬
 		Collections.sort(list);
 	
 		for(int value : list) {
