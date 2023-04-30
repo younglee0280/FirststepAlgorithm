@@ -14,17 +14,17 @@ public class SelectionSort_2751 {
 		int N = in.nextInt();
 		//ArrayList : 배열 기반, 데이터 추가와 삭제에 불리,
 		//ArrayList <E> Class
-		ArrayList<Integer> list = new ArrayList<>();
-	
+		ArrayList<Integer> arrList = new ArrayList<>();
+
 		for(int i = 0; i < N; i++) {
-			list.add(in.nextInt());
+			arrList.add(in.nextInt());
 		}
 		
 		//검색, 정렬, 셔플 등의 기능 제공
 		//Collections.sort() 메서드를 이용한 요소 정렬
-		Collections.sort(list);
+		Collections.sort(arrList);
 	
-		for(int value : list) {
+		for(int value : arrList) {
 			sb.append(value).append('\n');
 		}
 		System.out.println(sb);
