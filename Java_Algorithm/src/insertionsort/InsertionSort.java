@@ -24,10 +24,10 @@ public class InsertionSort {
 				System.out.printf("내부 반복문: ins = %d, cmp = %d, temp = %d\n", 
 						ins, cmp, temp);
 				if (a[cmp] > temp) { // 내림차순
-					a[cmp + 1] = a[cmp]; // 만족시 a[cmp] 값 하나 뒤로 이동, 삽입 위치 비움
+					a[cmp + 1] = a[cmp]; // a[cmp] 값 하나 뒤로 이동, 삽입 위치 비움
 				} else {
 					System.out.printf("break로 중단\n");
-					break; // 불만족 시 종료
+					break; 
 				}
 				
 				//내부 반복문 1회 실행 후 정렬 중간 결과 내용 표시
@@ -38,7 +38,6 @@ public class InsertionSort {
 			System.out.printf("외부 반복문: 확정된 삽입 위치 = a[%d] <- temp\n\n", cmp+1);
 			a[cmp + 1] = temp; // 삽입 위치에 temp 값 저장
 
-			//삽입 위치 확정 후 정렬 중간 결과 내용 표시
 			System.out.printf("삽입 위치 확정 후 정렬 중간 결과\n");
 			printArray(a);
 			System.out.printf("\n");
