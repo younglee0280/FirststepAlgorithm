@@ -66,7 +66,9 @@ public class HashTableSearchSyn {
 		}
 		
 			if(hashTable[pos] == data) {
-//				System.out.println("%d번째에서 발견되었습니다.\n", pos);
+				System.out.printf("%d번째에서 발견되었습니다.\n", pos);
+			} else {
+				System.out.printf("찾을 수 없습니다.\n");
 			}
 
 		} while (true);
