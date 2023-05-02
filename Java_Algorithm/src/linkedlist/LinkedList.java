@@ -38,19 +38,24 @@ public class LinkedList {
 		System.out.println("\n");
 	}
 	
-	
 	public static void insertStationList(int insIdx, String insName, int prevIdx) {
-		//¿ª ÀÌ¸§ »ðÀÔ
-		list[insIdx].name = insName;
+		list[insIdx].name = insName; //¿ª ÀÌ¸§ »ðÀÔ
 		list[insIdx].next = list[prevIdx].next;
 		list[prevIdx].next = insIdx;
 	}
 	
-	
-	
+	public static void deleteStationList(int delIdx, int prevIdx) {
+		list[prevIdx].next = list[delIdx].next;
+	}
 	
 	public static void main(String[] args) {
 		initStationList();
+		printStationList();
+		
+		insertStationList(5, "±¤¸í", 2);
+		printStationList();
+
+		deleteStationList(5, 2);
 		printStationList();
 	}
 
