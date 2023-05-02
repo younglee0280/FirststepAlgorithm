@@ -53,6 +53,21 @@ public class HashTableSearchSyn {
 			hashValue = hashFunc(data);
 
 			pos = hashValue;
+		while (hashTable[pos] != -1 && hashTable[pos] != data) {
+			pos++;
+			
+			if(pos >= hashTable.length) {
+				pos = 0;
+			}
+			
+			if(hashTable[pos] == -1 || pos == hashValue) {
+				break;
+			}
+		}
+		
+			if(hashTable[pos] == data) {
+//				System.out.println("%d번째에서 발견되었습니다.\n", pos);
+			}
 
 		} while (true);
 		scn.close();
