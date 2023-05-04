@@ -1,0 +1,9 @@
+package binarysearch;
+
+public class binary {
+
+	public static void main(String[] args) {
+
+	}
+
+}
