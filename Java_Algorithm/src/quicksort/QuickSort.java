@@ -21,11 +21,43 @@ public class QuickSort {
 		while(a[head] < a[right]) {
 			right--;
 		}
+		if(left <= right) {
+			break;
+		}
+		temp = a[left];
+		a[left] = a[right];
+		a[right] = temp;
+		
+		left++;
+		right--;
 		}
 		
+		temp = a[head];
+		a[head] = a[right];
+		a[right] = temp;
+		
+		return right;
 	}
+	
+	public static void sortArray(int[] a, int start, int end){
+		int pivot;
+		
+		if(start < end) {
+			pivot = divideArray(a, start, end);
+			
+			sortArray(a, start, end);
+			
+			sortArray(a, pivot + 1, end);
+		}
+	}
+	
 	public static void main(String[] args) {
-
+		int[] a = {4, 7, 1, 6, 2, 5, 3};
+		
+		printArray(a);
+		
+		sortArray(a, 0, a.length-1);
+		
+		printArray(a);
 	}
-
 }
