@@ -19,11 +19,22 @@ public class LinkedList_detail {
 		list[0].next = -1;
 		list[1].name = "워싱턴";
 		list[1].next = 3;
-		list[2].name = ""
+		list[2].name = "아테네";
+		list[2].next = 4;
+		list[3].name = "파리";
+		list[3].next = 0;
+		list[4].name = "로마";
+		list[4].next = 1;
+		
+		head = 2;
 	}
 
 	public static void main(String[] args) {
-
+		int idx = head;
+		while(idx != -1) {
+			System.out.printf("["+ list[idx].name + "] -> ");
+			idx = list[idx].next;
+		}
 	}
 
 }
