@@ -1,6 +1,6 @@
 package binarysearch;
 
-public class binarysearch_1920 {
+public class IncreasingSubsequence_11053 {
 
 	public static void main(String[] args) {
 
