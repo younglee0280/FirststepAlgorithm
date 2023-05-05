@@ -17,7 +17,7 @@ public class LinkedList_detail {
 		
 		list[0].name = "╪╜©О";
 		list[0].next = -1;
-		list[1].name = "©Ж╫лео";
+		list[1].name = "©Ж╫лео D.C";
 		list[1].next = 3;
 		list[2].name = "╬февЁв";
 		list[2].next = 4;
@@ -29,12 +29,33 @@ public class LinkedList_detail {
 		head = 2;
 	}
 
-	public static void main(String[] args) {
+	public static void printStationList() {
 		int idx = head;
 		while(idx != -1) {
-			System.out.printf("["+ list[idx].name + "] -> ");
+			System.out.printf("["+ list[idx].name + "] ");
 			idx = list[idx].next;
 		}
+		System.out.printf("\n");
 	}
-
+	
+	public static void insertStationList(int insIdx, String insName, int prevIdx) {
+		list[insIdx].name = insName;
+		list[insIdx].next = list[prevIdx].next;
+		list[prevIdx].next = insIdx;
+	}
+	
+	public static void deleteStationList(int delIdx, int prevIdx) {
+		list[prevIdx].next = list[delIdx].next;
+	}
+	
+	public static void main(String[] args) {
+		initStationList();
+		printStationList();
+		
+		insertStationList(5, "д╣╧Ж╤С", 2);
+		printStationList();
+		
+		deleteStationList(5, 2);
+		printStationList();
+	}
 }
