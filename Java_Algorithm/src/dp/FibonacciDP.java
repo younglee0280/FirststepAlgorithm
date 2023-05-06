@@ -5,20 +5,20 @@ public class FibonacciDP {
 
 	public static int fibonacci(int n) {
 		for (int i = 0; i <= n; i++) {
-			if(i == 0) {
+			if (i == 0) {
 				fibonacciNumbers[i] = 0;
-			}else if(i == 1) {
+			} else if (i == 1) {
 				fibonacciNumbers[i] = 1;
-			}else {
+			} else {
 				fibonacciNumbers[i] = fibonacciNumbers[i - 1] + fibonacciNumbers[i - 2];
 			}
 		}
 		return fibonacciNumbers[n];
 	}
-	
+
 	public static void main(String[] args) {
 		for (int n = 0; n <= 8; n++) {
-			System.out.printf("%d, ", fibonacci(n));	
+			System.out.printf("%d, ", fibonacci(n));
 		}
 		System.out.printf("\n");
 	}
