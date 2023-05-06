@@ -32,7 +32,7 @@ public class LinkedList {
 	public static void printStationList() {
 		int idx = head;
 		while(idx != -1) {
-			System.out.printf("["+ list[idx].name + "] ");
+			System.out.printf("["+ list[idx].name + "] - ");
 			idx = list[idx].next;
 		}
 		System.out.println("\n");
