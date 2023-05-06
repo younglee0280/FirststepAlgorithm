@@ -28,6 +28,9 @@ public class FibonnaciRecDP {
 	}
 	
 	public static void main(String[] args) {
+		initFibonacciNumbers();
+		
+		System.out.printf("5번째 피보나치 수 = %d\n", fibonacci(5));
 
 	}
 
