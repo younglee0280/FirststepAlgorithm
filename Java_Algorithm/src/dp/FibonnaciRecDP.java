@@ -11,7 +11,7 @@ public class FibonnaciRecDP {
 	}
 
 	public static int fibonacci(int n) {
-		System.out.printf("fibonacci(%d)가 호출");
+		System.out.printf("fibonacci(%d)가 호출됨");
 
 		if (fibonacciNumbers[n] == -1) {
 			if (n == 0) {
