@@ -9,19 +9,21 @@ class BST {
 public class BinarySearchTree {
 
 	public static BST[] tree = new BST[10];
-
+	//루트 요소의 인덱스(head)
 	public static int rootIdx = 0;
-
+	//다음에 저장할 요소의 인덱스
 	public static int newIdx = 0;
 
+	//메서드 addBST는 파라미터 data에 지정된 요소를 이진 탐색 트리에 추가
 	public static void addBST(int data) {
 		int currentIdx;
-		boolean addFlag;
+		boolean addFlag; //확인 플래그
 
 		tree[newIdx].data = data;
 		tree[newIdx].left = -1;
 		tree[newIdx].right = -1;
-
+		
+		//루트가 아닌 경우
 		if (newIdx != rootIdx) {
 			currentIdx = rootIdx;
 			addFlag = false;
