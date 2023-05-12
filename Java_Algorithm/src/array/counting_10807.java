@@ -1,4 +1,4 @@
-package sort;
+package array;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -13,6 +13,12 @@ public class counting_10807 {
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 		
 		int N = Integer.parseInt(br.readLine());
+		
+		String s = br.readLine();
+		String array[] = s.split(" ");
+		bw.write(s);
+//		bw.flush();
+		bw.close();
 	}
 
 }
