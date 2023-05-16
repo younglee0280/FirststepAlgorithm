@@ -80,7 +80,6 @@ public class BinarySearchTree {
 			tree[i] = new BST();
 		}
 		
-		// 트리 구성
 		addBST(4);
 		addBST(6);
 		addBST(5);
