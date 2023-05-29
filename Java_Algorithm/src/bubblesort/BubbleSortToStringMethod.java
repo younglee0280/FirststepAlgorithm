@@ -1,5 +1,7 @@
 package bubblesort;
 
+import java.util.Arrays;
+
 public class BubbleSortToStringMethod {
 
 	public static void main() {
@@ -16,9 +18,9 @@ public class BubbleSortToStringMethod {
 				}
 			}
 		}
+		System.out.printf(Arrays.toString(a));
 	}
 	
-	//	System.out.println(Arrays.toString(array));
 	/*
 	 * 그냥 배열을 출력하면 원하는 형태로 출력되는 걸 볼 수 없음,
 	 * java.util.Arrays의 toString 메서드를 사용하여 배열을 출력
