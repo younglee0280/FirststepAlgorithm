@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class BubbleSortToStringMethod {
 
-	public static void main() {
+	public static void main(String[] args) {
 		int a[] = {6, 4, 2, 1, 3, 5};
 		
 		int temp = 0;
