@@ -14,7 +14,6 @@ public class minmax_10818 {
 		
 		//라인 단위로 읽어들임
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		StringTokenizer st = new StringTokenizer(br.readLine(), " ");
 		
 		int a = Integer.parseInt(br.readLine());
 		
@@ -26,6 +25,7 @@ public class minmax_10818 {
 		 *3. 구분자를 기준으로 문자열 분리할 때 
 		 *	  구분자도 토큰으로 넣는다(True) / 구분자의 역할만 충족하고 토큰에 넣지 않는다(False) - 디폴트
 		 */
+		StringTokenizer st = new StringTokenizer(br.readLine(), " ");
 		
 		int N = Integer.parseInt(st.nextToken());
 //		int a[] = new int[N];
