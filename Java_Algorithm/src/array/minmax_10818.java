@@ -33,15 +33,15 @@ public class minmax_10818 {
 		int min = N;
 		int max = N;
 		
-		for(int i = 0; i < a - 1; i++) {
+			for(int i = 0; i < a - 1; i++) {
 //			a[i] = Integer.parseInt(br.readLine());
-			int M = Integer.parseInt(st.nextToken());
+				int M = Integer.parseInt(st.nextToken());
 			
-			if(min > M)
-				min = M;
-			if(max < M)
-				max = M;
-		}
+				if(min > M)
+					min = M;
+				if(max < M)
+					max = M;
+			}
 		System.out.println(min + " " + max);
 		
 //		String s = br.readLine();
