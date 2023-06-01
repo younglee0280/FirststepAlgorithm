@@ -9,12 +9,12 @@ public class MinMax_10818 {
 
 	public static void main(String[] args) throws IOException {
 
-		// 라인 단위로 읽어들임
+		// BufferedReader : 라인 단위로 읽어들임
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
 		int a = Integer.parseInt(br.readLine());
 
-		/*
+		/* StringTokenizer
 		 * 콤마 혹은 공백 기준 문자열 분리, 특정 문자에 따라 문자열 분리하고 싶을때 사용
 		 *
 		 * 1. StringTokenizer st = new StringTokenizer(문자열); 2. StringTokenizer st = new
