@@ -40,7 +40,6 @@ public class MinMax_10818 {
 		}
 		System.out.println(min + " " + max);
 
-//		String s = br.readLine();
 //		System.out.println(Arrays.toString(a));
 	}
 
