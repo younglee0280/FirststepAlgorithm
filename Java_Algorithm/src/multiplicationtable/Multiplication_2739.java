@@ -6,17 +6,13 @@ public class Multiplication_2739 {
 
 	public static void main(String[] args) {
 
-		System.out.print("x = ");
-		int m, n, x;
-		Scanner scn = new Scanner(System.in);
-		scn.close();
-		x = scn.nextInt();
+		Scanner input = new Scanner(System.in);
 
-		for (m = x; m <= x; m++) {
-			for (n = 1; n <= 9; n++) {
-				System.out.println(m + " * " + n + " = " + (m * n));
-			}
-//		System.out.printf("\n");
+		System.out.print("x = ");
+		int x = input.nextInt();
+
+		for (int i = 1; i <= 9; i++) {
+			System.out.println(x + " * " + i + " = " + x * i);
 		}
 	}
 }

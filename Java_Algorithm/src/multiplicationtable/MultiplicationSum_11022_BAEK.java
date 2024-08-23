@@ -6,17 +6,16 @@ public class MultiplicationSum_11022_BAEK {
 	
 //	public class Main{
 	public static void main(String[] args) {
-		Scanner scn = new Scanner(System.in);
+		Scanner input = new Scanner(System.in);
 		
-		//int i;
-		int n = scn.nextInt();
+		int n = input.nextInt();
 		int a[] = new int[n];
 		int b[] = new int[n];
 		int array[] = new int[n];
 		
 		for(int i = 0; i < n; i++) {
-			a[i] = scn.nextInt();
-			b[i] = scn.nextInt();
+			a[i] = input.nextInt();
+			b[i] = input.nextInt();
 			array[i] = a[i] + b[i];
 		}
 		

@@ -23,7 +23,7 @@ public static void main(String[] args) throws IOException{
 			bw.write("Case #" + (i+1) + ": " + a + " + " + b + " = " + (a+b) + "\n");
 		}
 		br.close();
-		//Flushes the stream ; BufferedWriter가 버퍼를 잡아놓았기 때문에 반드시 flush()를 호출해 남아있는 데이터를 모두 출력해야함
+		//Flushes the stream ; BufferedWriter가 버퍼를 잡아놨기에 반드시 flush()를 호출해 남아있는 데이터를 모두 출력해야 함
 		bw.flush();
 		bw.close();
 }

@@ -8,7 +8,7 @@ public class SumOfArrayTrace_01 {
 		sum = 0;
 		System.out.printf("반복 실행 전 : sum = %d", sum);
 		
-		for(i=0; i<a.length; i++) {
+		for(i=0; i < a.length; i++) {
 			sum += a[i];
 			System.out.printf("반복 실행 중 : sum = %d, i = %d\n", sum, i);
 		}
